@@ -30,21 +30,8 @@ namespace LoggerUnitTests
         }
 
         [TestMethod]
-        public void WriteLogTest()
+        public void WriteLogConsoleOutputterTest()
         {
-
-            //var writer = new Mock<IOutputWriter>();
-
-            //var mock = new Mock<ConsoleOutputter>(writer.Object, new object[] { "question text", true });
-
-            //mock.CallBase = true;
-
-            //var cons = mock.Object;
-
-            //cons.WriteLog(Level.DEBUG, "unitTest");
-
-            //mock.Verify(m => m.WriteLog(Level.DEBUG, "unitTest"), Times.Exactly(1));
-            //mock.Verify(w => w.WriteLine(It.Is<string>(s => s == "DEBUG: unitTest WHEN: " + DateTime.Now)), Times.Once);
             string expected = Level.INFO.ToString() + ": " + "unitTest" + " WHEN: " + DateTime.Now + "\r\n";
             string actual;
 
@@ -56,8 +43,7 @@ namespace LoggerUnitTests
             actual = stringWriter.ToString();
 
 
-            //Assert.AreEqual<string>(expected, actual);
-
+            //assert
             Assert.IsTrue(expected.SequenceEqual(actual));
         }
     }
