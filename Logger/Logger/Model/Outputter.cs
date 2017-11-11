@@ -9,7 +9,7 @@ namespace Logger
     public interface Outputter
     {
         void WriteLog(Level lvl, string value);
-        Outputter getInstance();
-        OutputType getOutputType();
+        Outputter GetInstance();
+        OutputType GetOutputType();
     }
 }

@@ -15,12 +15,12 @@ namespace Logger
             documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
-        public Outputter getInstance()
+        public Outputter GetInstance()
         {
             return this;
         }
 
-        public OutputType getOutputType()
+        public OutputType GetOutputType()
         {
             return OutputType.File;
         }

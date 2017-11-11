@@ -14,12 +14,12 @@ namespace Logger
 
         }
 
-        public Outputter getInstance()
+        public Outputter GetInstance()
         {
             return this;
         }
 
-        public OutputType getOutputType()
+        public OutputType GetOutputType()
         {
             return OutputType.Console;
         }

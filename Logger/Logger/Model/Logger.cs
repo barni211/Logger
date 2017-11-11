@@ -30,7 +30,7 @@ namespace Logger
         {
             if (CheckOutput(output)==false)
             {
-                instanceMap.Add(output.getOutputType(), output.getInstance());
+                instanceMap.Add(output.GetOutputType(), output.GetInstance());
             }
         }
 
@@ -43,7 +43,7 @@ namespace Logger
         {
             foreach (Outputter output in instanceMap.Values)
             {
-                if(check.getOutputType() == output.getOutputType())
+                if(check.GetOutputType() == output.GetOutputType())
                 {
                     return true;
                 }
@@ -55,7 +55,7 @@ namespace Logger
         {
             if(CheckOutput(output)==true)
             {
-                instanceMap.Remove(output.getOutputType());
+                instanceMap.Remove(output.GetOutputType());
             }
         }
 

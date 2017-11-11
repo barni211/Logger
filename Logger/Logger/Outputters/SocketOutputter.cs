@@ -20,12 +20,12 @@ namespace Logger
             remoteEP = new IPEndPoint(ipAdd, m_port);
         }
 
-        public Outputter getInstance()
+        public Outputter GetInstance()
         {
             return this;
         }
 
-        public OutputType getOutputType()
+        public OutputType GetOutputType()
         {
             return OutputType.Socket;
         }
